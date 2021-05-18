@@ -1,21 +1,13 @@
 <!doctype html>
-<title>{% block title %}{% endblock %}</title>
+<title>{% block title %}Quiz Application{% endblock %}</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <body>
   <nav>
-    <h1>MODULES</h1>
+    <h1>QUIZ APPLICATION</h1>
   </nav>
   <section class="content">
-    <header>
-      {% block header %}{% endblock %}
-    </header>
-      <div class="modules">
-        <ul>
-          <li><a href="/quiz/math"><button type="button">Math</button></a></li>
-          <li><a href="/quiz/english"><button type="button">English</button></a></li>
-          <li><a href="/quiz/science"><button type="button">Science</button></a></li>
-        </ul>
-      </div>
-    {% block content %}{% endblock %}
+    {% block content %}
+    <a href="/quiz"><button>View Modules</button></a>
+    {% endblock %}
   </section>
 </body>
