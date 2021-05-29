@@ -24,6 +24,7 @@ def create_app(test_config=None):
     from . import module
     app.register_blueprint(module.module_bp)
     app.register_blueprint(module.index_bp)
+    app.register_blueprint(module.quiz_submit_bp)
 
     @app.route('/')
     def hello():
