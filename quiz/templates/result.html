@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+Result
+{% endblock %}
+{% block content %}
+<h1>This is {{ module.capitalize() }} Module</h1>
+{% for result in data %}
+<p>{{result.question.question}}</p>
+<p>{{result.choose}}</p>
+<p>Actual Answer - {{result.question.answer}}</p>
+{% endfor %}
+{%endblock%}

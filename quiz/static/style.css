@@ -5,3 +5,9 @@ ul {
 li {
     display: inline-block;
 }
+.question_list{
+    list-style: disc;
+}
+.question_list li{
+    display: block;
+}
