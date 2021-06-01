@@ -6,6 +6,6 @@ Using Flask framework for the development
 <li> Can attempt multiple time </li>
 <li> Check result after submit </li>
 <h3> Demo </h3>
-![Image](https://github.com/lmp95/QuizApp/blob/dev_lmp/demo/demo_1.png?raw=true)
-![Image](https://github.com/lmp95/QuizApp/blob/dev_lmp/demo/demo_2.png?raw=true)
-![Image](https://github.com/lmp95/QuizApp/blob/dev_lmp/demo/demo_3.png?raw=true)
+<img src="/demo/demo_1.png" width="50%">
+<img src="/demo/demo_2.png" width="50%">
+<img src="/demo/demo_3.png" width="50%">
