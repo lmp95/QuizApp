@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "moduleId": 3,
+    "question": "Which of the following weather tools measures wind speed?",
+    "choices": [
+      {
+        "1": "Thermometer"
+      },
+      {
+        "2": "Barometer"
+      },
+      {
+        "3": "Wind Vane"
+      },
+      {
+        "4": "None of these"
+      }
+    ],
+    "answer": "Wind Vane"
+  },
+  {
+    "id": 2,
+    "moduleId": 3,
+    "question": "What type of scientist studies motion?",
+    "choices": [
+      {
+        "1": "Chemist"
+      },
+      {
+        "2": "Biologist"
+      },
+      {
+        "3": "Physicist"
+      },
+      {
+        "4": "Geologist"
+      }
+    ],
+    "answer": "Physicist"
+  },
+  {
+    "id": 3,
+    "moduleId": 3,
+    "question": "What temperature water created a faster reaction in the volcano?",
+    "choices": [
+      {
+        "1": "Hot"
+      },
+      {
+        "2": "Cold"
+      },
+      {
+        "3": "We can't make a model volcano with water."
+      },
+      {
+        "4": "They were the same"
+      }
+    ],
+    "answer": "Hot"
+  },
+  {
+    "id": 4,
+    "moduleId": 3,
+    "question": "What part of the cell are all the organelles found?",
+    "choices": [
+      {
+        "1": "Nucleus"
+      },
+      {
+        "2": "Cytoplasm"
+      },
+      {
+        "3": "Cell Wall"
+      },
+      {
+        "4": "Cell Membrane"
+      }
+    ],
+    "answer": "Cytoplasm"
+  },
+  {
+    "id": 5,
+    "moduleId": 3,
+    "question": "How does a producer get their energy?",
+    "choices": [
+      {
+        "1": "Soil"
+      },
+      {
+        "2": "Eating things"
+      },
+      {
+        "3": "Water"
+      },
+      {
+        "4": "Photosynthesis"
+      }
+    ],
+    "answer": "Photosynthesis"
+  },
+  {
+    "id": 6,
+    "moduleId": 3,
+    "question": "Which of these is a conductor?",
+    "choices": [
+      {
+        "1": "Wood"
+      },
+      {
+        "2": "Mittens"
+      },
+      {
+        "3": "Jacket"
+      },
+      {
+        "4": "Metal"
+      }
+    ],
+    "answer": "Metal"
+  },
+  {
+    "id": 7,
+    "moduleId": 3,
+    "question": "What color is your blood?",
+    "choices": [
+      {
+        "1": "No color"
+      },
+      {
+        "2": "Red"
+      },
+      {
+        "3": "Blue"
+      },
+      {
+        "4": "Red and blue"
+      }
+    ],
+    "answer": "Red"
+  },
+  {
+    "id": 8,
+    "moduleId": 3,
+    "question": "How does a meteorologist know how much it has rained over a certain time period?",
+    "choices": [
+      {
+        "1": "Rain Make"
+      },
+      {
+        "2": "Barometer"
+      },
+      {
+        "3": "Rain Cycle"
+      },
+      {
+        "4": "Rain Gauge"
+      }
+    ],
+    "answer": "Rain Gauge"
+  },
+  {
+    "id": 9,
+    "moduleId": 3,
+    "question": "What is a force?",
+    "choices": [
+      {
+        "1": "Tendency for an object to resist a change in motion"
+      },
+      {
+        "2": "A Push or a Pull"
+      },
+      {
+        "3": "Weight"
+      },
+      {
+        "4": "Mass"
+      }
+    ],
+    "answer": "A Push or a Pull"
+  },
+  {
+    "id": 10,
+    "moduleId": 3,
+    "question": "What is acceleration?",
+    "choices": [
+      {
+        "1": "The rate of change in motion"
+      },
+      {
+        "2": "The speed of an object"
+      },
+      {
+        "3": "The direction of an object"
+      },
+      {
+        "4": "The rate the object slows down"
+      }
+    ],
+    "answer": "The rate of change in motion"
+  },
+  {
+    "id": 11,
+    "moduleId": 3,
+    "question": "Who came up with the three laws of motion?",
+    "choices": [
+      {
+        "1": "The Science Fun scientist"
+      },
+      {
+        "2": "Galileo"
+      },
+      {
+        "3": "Benjamin Franklin"
+      },
+      {
+        "4": "Isaac Newton"
+      }
+    ],
+    "answer": "Isaac Newton"
+  },
+  {
+    "id": 12,
+    "moduleId": 3,
+    "question": "Which body part is part of the nervous system?",
+    "choices": [
+      {
+        "1": "Heart"
+      },
+      {
+        "2": "Lungs"
+      },
+      {
+        "3": "Spinal Cord"
+      },
+      {
+        "4": "Muscles"
+      }
+    ],
+    "answer": "Spinal Cord"
+  }
+]

@@ -3,7 +3,7 @@
 Math
 {% endblock %}
 {% block content %}
-<a href="/quiz">Back</a><h1>This is {{ module.capitalize() }} Module</h1>
+<a href="/module">Back</a><h1>This is {{ module.capitalize() }} Module</h1>
 <form method="post" action="{{ url_for('module.get_module', module=module) }}">
     {%for i in range(0, len)%}
     <h3>{{i+1}} - {{Questions[i].question}}</h3>

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "moduleId": 2,
+    "question": "I was amazed ………………… his brilliance",
+    "choices": [
+      {
+        "1": "with"
+      },
+      {
+        "2": "at"
+      },
+      {
+        "3": "by"
+      },
+      {
+        "4": "to"
+      }
+    ],
+    "answer": "at"
+  },
+  {
+    "id": 2,
+    "moduleId": 2,
+    "question": "He is afflicted ………………… a serious illness.",
+    "choices": [
+      {
+        "1": "with"
+      },
+      {
+        "2": "to"
+      },
+      {
+        "3": "by"
+      },
+      {
+        "4": "of"
+      }
+    ],
+    "answer": "with"
+  },
+  {
+    "id": 3,
+    "moduleId": 2,
+    "question": "She does not agree ……………… me.",
+    "choices": [
+      {
+        "1": "upon"
+      },
+      {
+        "2": "to"
+      },
+      {
+        "3": "with"
+      },
+      {
+        "4": "None of these"
+      }
+    ],
+    "answer": "with"
+  },
+  {
+    "id": 4,
+    "moduleId": 2,
+    "question": "You must apologize ……………… him for your rude behaviour.",
+    "choices": [
+      {
+        "1": "to"
+      },
+      {
+        "2": "by"
+      },
+      {
+        "3": "with"
+      },
+      {
+        "4": "for"
+      }
+    ],
+    "answer": "to"
+  },
+  {
+    "id": 5,
+    "moduleId": 2,
+    "question": "Is it possible to achieve just about everything one aims ………………?",
+    "choices": [
+      {
+        "1": "of"
+      },
+      {
+        "2": "by"
+      },
+      {
+        "3": "for"
+      },
+      {
+        "4": "to"
+      }
+    ],
+    "answer": "for"
+  },
+  {
+    "id": 6,
+    "moduleId": 2,
+    "question": "She often boasts ……………… her aristocratic upbringing.",
+    "choices": [
+      {
+        "1": "on"
+      },
+      {
+        "2": "about"
+      },
+      {
+        "3": "for"
+      },
+      {
+        "4": "by"
+      }
+    ],
+    "answer": "about"
+  },
+  {
+    "id": 7,
+    "moduleId": 2,
+    "question": "Don’t brood ………………… your mistakes and failures.",
+    "choices": [
+      {
+        "1": "at"
+      },
+      {
+        "2": "with"
+      },
+      {
+        "3": "by"
+      },
+      {
+        "4": "over"
+      }
+    ],
+    "answer": "over"
+  },
+  {
+    "id": 8,
+    "moduleId": 2,
+    "question": "We decided to call ……………… the principal.",
+    "choices": [
+      {
+        "1": "at"
+      },
+      {
+        "2": "on"
+      },
+      {
+        "3": "for"
+      },
+      {
+        "4": "to"
+      }
+    ],
+    "answer": "for"
+  },
+  {
+    "id": 9,
+    "moduleId": 2,
+    "question": "He has been charged ……………… the murder of his neighbor.",
+    "choices": [
+      {
+        "1": "for"
+      },
+      {
+        "2": "by"
+      },
+      {
+        "3": "with"
+      },
+      {
+        "4": "to"
+      }
+    ],
+    "answer": "with"
+  },
+  {
+    "id": 10,
+    "moduleId": 2,
+    "question": "After the dance competition, the judges were comparing their judgement scores ……………… each other.",
+    "choices": [
+      {
+        "1": "to"
+      },
+      {
+        "2": "for"
+      },
+      {
+        "3": "with"
+      },
+      {
+        "4": "by"
+      }
+    ],
+    "answer": "with"
+  },
+  {
+    "id": 11,
+    "moduleId": 2,
+    "question": "We went out ……………… the rain.",
+    "choices": [
+      {
+        "1": "however"
+      },
+      {
+        "2": "because of"
+      },
+      {
+        "3": "in spite of"
+      },
+      {
+        "4": "instead of"
+      }
+    ],
+    "answer": "in spite of"
+  },
+  {
+    "id": 12,
+    "moduleId": 2,
+    "question": "The wind ……………… furiously.",
+    "choices": [
+      {
+        "1": "blew"
+      },
+      {
+        "2": "blown"
+      },
+      {
+        "3": "blowned"
+      },
+      {
+        "4": "blewed"
+      }
+    ],
+    "answer": "blew"
+  }
+]

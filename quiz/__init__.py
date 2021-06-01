@@ -25,6 +25,7 @@ def create_app(test_config=None):
     app.register_blueprint(module.module_bp)
     app.register_blueprint(module.index_bp)
     app.register_blueprint(module.quiz_submit_bp)
+    app.secret_key = '9e389504-c096-11eb-8529-0242ac130003'
 
     @app.route('/')
     def hello():
