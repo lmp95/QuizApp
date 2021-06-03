@@ -3,18 +3,55 @@
 Math
 {% endblock %}
 {% block content %}
-<a href="/module">Back</a><h1>This is {{ module.capitalize() }} Module</h1>
+<a href="/module">Back</a>
+<h1>{{ module.capitalize() }} Module Quiz Questions</h1>
 <form method="post" action="{{ url_for('module.get_module', module=module) }}">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     {%for i in range(0, len)%}
-    <h3>{{i+1}} - {{Questions[i].question}}</h3>
-    {%for choice in Questions[i].choices%}
-    {%for key, value in choice.items()%}
-    <input type="radio" id="{{value}}" name="{{i+1}}" value="{{value}}">
-    <label for="{{value}}">{{value}}</label><br>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="question{{i+1}}">
+        <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{i+1}}"
+                {% if i == 0 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse{{i+1}}">
+            {{i+1}} - {{Questions[i].question}}
+            </a>
+        </h4>
+        </div>
+        <div id="collapse{{i+1}}"
+             {% if i == 0 %} class="panel-collapse collapse in" {% else %} class="panel-collapse collapse" {% endif %}
+             role="tabpanel" aria-labelledby="question{{i+1}}">
+        <div class="panel-body">
+            {%for choice in Questions[i].choices%}
+            {%for key, value in choice.items()%}
+            <input type="radio" id="{{value}}" name="{{i+1}}" value="{{value}}">
+            <label for="{{value}}">{{value}}</label><br>
+            {%endfor%}
+            {%endfor%}
+        </div>
+        </div>
+    </div>
     {%endfor%}
-    {%endfor%}
-    {%endfor%}
+    </div>
 <br>
-<button type="submit" value="Submit">Submit</button>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#submitModal">
+  Submit
+</button>
+<div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="submitModalLabel">Confirmation</h4>
+      </div>
+      <div class="modal-body">
+        Are you sure to submit the answers?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="submit" value="Submit" class="btn btn-primary">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
 </form>
 {%endblock%}

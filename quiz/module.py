@@ -51,6 +51,9 @@ quiz_submit_bp = Blueprint('submit', __name__, template_folder='templates')
 def quiz_result(module):
     results = []
     data = session['choose']
+    total = 0
     for x in range(10):
+        if str(generated_questions[x].answer) == str(data[x]):
+            total += 1
         results.append(Result(x, generated_questions[x], data[x]))
-    return render_template('result.html', module=module, data=results)
+    return render_template('result.html', module=module, data=results, totalMark=total)

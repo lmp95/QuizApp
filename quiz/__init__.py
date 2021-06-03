@@ -2,11 +2,15 @@ import os
 
 from flask import Flask
 from flask import render_template
+from flask_bootstrap import Bootstrap
+from flask_fontawesome import FontAwesome
 
 
 def create_app(test_config=None):
 
     app = Flask(__name__, instance_relative_config=True)
+    Bootstrap(app)
+    FontAwesome(app)
 
     if test_config is None:
         # load the instance config, if it exists, when not testing

@@ -3,11 +3,31 @@
 Quiz Application
 {% endblock %}
 {% block content %}
-  <div class="modules">
-    <ul>
-      <li><a href="/module/math"><button type="button">Math</button></a></li>
-      <li><a href="/module/english"><button type="button">English</button></a></li>
-      <li><a href="/module/science"><button type="button">Science</button></a></li>
-    </ul>
+<a href="/"><span style="font-size: 24px;"><i class="fa fa-arrow-left"></i></span></a>
+  <div class="modules row">
+    <div class="col-md-3 col-xs-6">
+      <a href="/module/math">
+      <div class="module-card">
+        <img src="static/images/math-course.jpeg">
+        <p>Math</p>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-xs-6">
+    <a href="/module/english">
+    <div class="module-card">
+      <img src="static/images/english-course.jpeg">
+      <p>English</p>
+    </div>
+    </a>
+    </div>
+    <div class="col-md-3 col-xs-6">
+    <a href="/module/science">
+    <div class="module-card">
+      <img src="static/images/science-course.jpeg">
+      <p>Science</p>
+    </div>
+    </a>
+    </div>
   </div>
 {% endblock %}

@@ -1,13 +1,11 @@
-<!doctype html>
-<title>{% block title %}Quiz Application{% endblock %}</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<body>
-  <nav>
-    <h1>QUIZ APPLICATION</h1>
-  </nav>
-  <section class="content">
-    {% block content %}
-    <a href="/module"><button>View Modules</button></a>
-    {% endblock %}
-  </section>
-</body>
+{% extends 'bootstrap/base.html' %}
+{% block title %}Quiz Application{% endblock %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='fontawesome/css/all.css')}}">
+{% endblock %}
+{% block content %}
+<h1>QUIZ APPLICATION</h1>
+<a href="/module"><button class="btn btn-primary">View Modules</button></a>
+{% endblock %}
