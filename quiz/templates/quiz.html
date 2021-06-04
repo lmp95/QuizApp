@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 {% block title %}
-Math
+{{module.capitalize()}}
 {% endblock %}
 {% block content %}
-<a href="/module">Back</a>
+<div class="container-fluid">
+<a href="/module"><span style="font-size: 24px;"><i class="fa fa-arrow-left"></i></span></a>
 <h1>{{ module.capitalize() }} Module Quiz Questions</h1>
 <form method="post" action="{{ url_for('module.get_module', module=module) }}">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -54,4 +55,5 @@ Math
   </div>
 </div>
 </form>
+</div>
 {%endblock%}

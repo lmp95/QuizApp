@@ -1,5 +1,12 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(fonts/Poppins-Regular.ttf) format('truetype');
+}
 body{
-    margin: 24px;
+    margin: 0px;
 }
 ul {
     list-style: none;
@@ -10,6 +17,47 @@ li {
 }
 .modules{
     margin-top: 12px;
+}
+.container-fluid{
+    margin: 16px 0px 16px 0px;
+}
+.main-container{
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(252,178,44,0.5032387955182073) 100%);
+    height: 100vh;
+    position: relative;
+    display: block;
+}
+.main-content-box{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    left: 100px;
+}
+.quote{
+    font-size: 7.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+.quote .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+.slogan{
+    font-size: 2.6em;
+    font-weight: 200;
+}
+.img-box{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+}
+.main-img{
+    width: 100%;
+    display: block;
 }
 a:link, a:hover{
     text-decoration: none;
