@@ -4,6 +4,9 @@ from flask import Flask
 from flask import render_template
 from flask_bootstrap import Bootstrap
 from flask_fontawesome import FontAwesome
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
 
 
 def create_app(test_config=None):
@@ -24,6 +27,11 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
+
+    app.config['SECRET_KEY'] = 'cXVpemFwcGtleQ=='
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+
+    db.init_app(app)
 
     from . import module
     app.register_blueprint(module.module_bp)

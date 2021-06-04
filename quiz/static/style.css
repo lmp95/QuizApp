@@ -37,7 +37,7 @@ li {
     font-size: 7.2em;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.05em;
 }
 .quote .letter {
     display: inline-block;
@@ -59,8 +59,17 @@ li {
     width: 100%;
     display: block;
 }
+.register-btn{
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 a:link, a:hover{
     text-decoration: none;
+}
+.modal-title{
+    display: inline-block;
 }
 .module-card{
     border-radius: 10px;
