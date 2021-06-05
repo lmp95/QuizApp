@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+Login
+{% endblock %}
+{% block content %}
+<div class="login-form-box">
+    <div class="login-form">
+        <div class="login-form-title">
+            <p>Login</p>
+        </div>
+    <form method="post" action="{{ url_for('auth.login') }}">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+            <p class="invalid-password" {% if message == True %} style="display: block;"
+               {% else %} style="display: none;" {% endif %}>
+                Incorrect Password
+            </p>
+        </div>
+        <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+    </form>
+    </div>
+</div>
+{% endblock %}

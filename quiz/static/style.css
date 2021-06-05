@@ -108,3 +108,36 @@ a:link, a:hover{
 .question_list li{
     display: block;
 }
+.login-form-box{
+    height: 100vh;
+    position: relative;
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+.login-form-title p{
+    display: block;
+    text-align: center;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #3B666B;
+    color: #ffffff;
+    padding: 16px 0px;
+    border-radius: 5px;
+}
+.login-form{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 16px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
+}
+.invalid-password{
+    color: #ff430d;
+    font-size: 12px;
+    padding: 6px 0px;
+}

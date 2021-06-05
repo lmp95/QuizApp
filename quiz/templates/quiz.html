@@ -10,21 +10,21 @@
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     {%for i in range(0, len)%}
     <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="question{{i+1}}">
+        <div class="panel-heading" role="tab" id="question{{i}}">
         <h4 class="panel-title">
-            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{i+1}}"
-                {% if i == 0 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse{{i+1}}">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}"
+                {% if i == 0 %} aria-expanded="true" {% else %} aria-expanded="false" {% endif %} aria-controls="collapse{{i}}">
             {{i+1}} - {{Questions[i].question}}
             </a>
         </h4>
         </div>
-        <div id="collapse{{i+1}}"
+        <div id="collapse{{i}}"
              {% if i == 0 %} class="panel-collapse collapse in" {% else %} class="panel-collapse collapse" {% endif %}
-             role="tabpanel" aria-labelledby="question{{i+1}}">
+             role="tabpanel" aria-labelledby="question{{i}}">
         <div class="panel-body">
             {%for choice in Questions[i].choices%}
             {%for key, value in choice.items()%}
-            <input type="radio" id="{{value}}" name="{{i+1}}" value="{{value}}">
+            <input type="radio" id="{{value}}" name="{{i}}" value="{{value}}">
             <label for="{{value}}">{{value}}</label><br>
             {%endfor%}
             {%endfor%}
