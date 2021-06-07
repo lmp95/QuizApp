@@ -14,7 +14,7 @@ filename = ''
 index_bp = Blueprint('index', __name__, template_folder='templates')
 @index_bp.route('/module')
 def index():
-    if session['user'] is not None:
+    if session['name'] is not None:
         return render_template('index.html')
     else:
         return redirect(url_for('auth.login'))
@@ -87,5 +87,10 @@ def login():
             return redirect(url_for('index.index'))
     else:
         return render_template('login.html')
+
+
+@auth_bp.route('/signup')
+def signup():
+    return render_template('signup.html')
 
 
